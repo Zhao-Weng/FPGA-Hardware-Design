@@ -1,0 +1,2610 @@
+16:16:15 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+16:16:27 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+16:43:24 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+16:43:25 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+16:43:41 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+16:43:42 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+16:43:52 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+19:06:17 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+19:06:19 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+19:06:32 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+19:17:27 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+19:17:28 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+19:17:37 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+19:25:30 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:62:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:175:13: warning: operation on 'AIPlay' may be undefined [-Wsequence-point]
+      AIPlay = AIPlay = 0? 1 : 0;
+             ^
+main.c:219:59: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (yPosition2 < 80 || !alive(*birdy2, pipeXposition) && god == 0) {
+                                                           ^
+main.c:226:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == 0 || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:43:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = 0;
+             ^
+main.c: In function 'AIPlayer':
+main.c:122:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'alive':
+main.c:134:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:274:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 27 KBytes program size (code + initialized data).
+Info:                           65502 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+19:25:34 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+19:25:45 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+19:26:36 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:62:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:175:13: warning: operation on 'AIPlay' may be undefined [-Wsequence-point]
+      AIPlay = AIPlay = 0? 1 : 0;
+             ^
+main.c:219:59: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (yPosition2 < 80 || !alive(*birdy2, pipeXposition) && god == 0) {
+                                                           ^
+main.c:226:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == 0 || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:43:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = 0;
+             ^
+main.c: In function 'AIPlayer':
+main.c:122:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'alive':
+main.c:134:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:274:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 27 KBytes program size (code + initialized data).
+Info:                           65502 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+19:26:40 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+19:27:22 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+19:27:23 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+19:27:34 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+19:34:46 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:62:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:174:6: error: 'god' undeclared (first use in this function)
+      god = god == 1? 0 : 1;
+      ^
+main.c:174:6: note: each undeclared identifier is reported only once for each function it appears in
+main.c:217:15: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead1 && two_players == 0 || dead1 && dead2 && two_players){
+               ^
+main.c: At top level:
+main.c:43:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = 0;
+             ^
+main.c: In function 'AIPlayer':
+main.c:121:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'alive':
+main.c:133:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:265:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+make: *** [obj/default/main.o] Error 1
+19:34:48 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+19:35:00 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:62:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:174:6: error: 'god' undeclared (first use in this function)
+      god = god == 1? 0 : 1;
+      ^
+main.c:174:6: note: each undeclared identifier is reported only once for each function it appears in
+main.c:217:15: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead1 && two_players == 0 || dead1 && dead2 && two_players){
+               ^
+main.c: At top level:
+main.c:43:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = 0;
+             ^
+main.c: In function 'AIPlayer':
+main.c:121:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'alive':
+main.c:133:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:265:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+make: *** [obj/default/main.o] Error 1
+19:37:49 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:63:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:186:18: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (god == 0 && YPosition1 < 80 || !alive(*helicopterY, pipeXposition)) {
+                  ^
+main.c:212:18: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (god == 0 && YPosition12 < 80 || !alive(*birdy2, pipeXposition)) {
+                  ^
+main.c:219:15: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead1 && two_players == 0 || dead1 && dead2 && two_players){
+               ^
+main.c: At top level:
+main.c:44:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = 0;
+             ^
+main.c: In function 'AIPlayer':
+main.c:122:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:267:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 27 KBytes program size (code + initialized data).
+Info:                           65502 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+19:37:52 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+19:38:11 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+19:40:42 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:63:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:187:18: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (god == 0 && YPosition1 < 80 || !alive(*helicopterY, pipeXposition)) {
+                  ^
+main.c:213:18: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (god == 0 && YPosition12 < 80 || !alive(*birdy2, pipeXposition)) {
+                  ^
+main.c:220:15: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead1 && two_players == 0 || dead1 && dead2 && two_players){
+               ^
+main.c: At top level:
+main.c:44:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = 0;
+             ^
+main.c: In function 'AIPlayer':
+main.c:122:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:268:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 27 KBytes program size (code + initialized data).
+Info:                           65502 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+19:40:46 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+19:40:57 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+19:45:14 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:63:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:188:18: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (god == 0 && YPosition1 < 80 || !alive(*helicopterY, pipeXposition)) {
+                  ^
+main.c:214:18: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (god == 0 && YPosition12 < 80 || !alive(*birdy2, pipeXposition)) {
+                  ^
+main.c:221:15: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead1 && two_players == 0 || dead1 && dead2 && two_players){
+               ^
+main.c: At top level:
+main.c:44:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = 0;
+             ^
+main.c: In function 'AIPlayer':
+main.c:122:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:269:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 73 KBytes program size (code + initialized data).
+Info:                           65456 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+19:45:17 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+19:46:26 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+19:46:27 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+19:46:38 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+19:52:23 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:58:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:214:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == false || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:40:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = false;
+             ^
+main.c: In function 'AIPlayer':
+main.c:118:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'bird_alive':
+main.c:130:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 27 KBytes program size (code + initialized data).
+Info:                           65502 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+19:52:26 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+19:52:37 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+20:00:39 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:58:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:213:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == false || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:40:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = false;
+             ^
+main.c: In function 'AIPlayer':
+main.c:118:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'bird_alive':
+main.c:130:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:261:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 27 KBytes program size (code + initialized data).
+Info:                           65502 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+20:00:42 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+20:00:54 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+20:33:59 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:58:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:138:22: warning: the address of 'debouncer' will always evaluate as 'true' [-Waddress]
+     switch (*keycode && debouncer) {
+                      ^
+main.c:229:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == false || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:40:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = false;
+             ^
+main.c: In function 'AIPlayer':
+main.c:118:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'bird_alive':
+main.c:130:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:277:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 28 KBytes program size (code + initialized data).
+Info:                           65502 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+20:34:03 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+20:36:39 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:58:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:231:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == false || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:40:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = false;
+             ^
+main.c: In function 'AIPlayer':
+main.c:118:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'bird_alive':
+main.c:130:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:279:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 28 KBytes program size (code + initialized data).
+Info:                           65502 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+20:36:43 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+20:36:55 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+20:39:31 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:58:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:231:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == false || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:40:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = false;
+             ^
+main.c: In function 'AIPlayer':
+main.c:118:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'bird_alive':
+main.c:130:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:279:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 28 KBytes program size (code + initialized data).
+Info:                           65502 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+20:39:34 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+20:41:56 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:58:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:225:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == false || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:40:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = false;
+             ^
+main.c: In function 'AIPlayer':
+main.c:118:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'bird_alive':
+main.c:130:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:273:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 28 KBytes program size (code + initialized data).
+Info:                           65502 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+20:41:59 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+20:42:11 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+20:45:48 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:58:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:225:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == false || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:40:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = false;
+             ^
+main.c: In function 'AIPlayer':
+main.c:118:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'bird_alive':
+main.c:130:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:273:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 27 KBytes program size (code + initialized data).
+Info:                           65502 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+20:45:52 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+20:46:03 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+20:46:05 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+20:46:15 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+20:48:04 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:58:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:225:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == false || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:40:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = false;
+             ^
+main.c: In function 'AIPlayer':
+main.c:118:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'bird_alive':
+main.c:130:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:273:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 27 KBytes program size (code + initialized data).
+Info:                           65502 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+20:48:08 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+20:48:54 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+20:48:56 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+20:49:08 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+20:52:31 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:58:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:225:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == false || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:40:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = false;
+             ^
+main.c: In function 'AIPlayer':
+main.c:118:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'bird_alive':
+main.c:130:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:273:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 27 KBytes program size (code + initialized data).
+Info:                           65502 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+20:52:34 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+20:53:02 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+20:53:03 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+20:53:20 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:59:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:231:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == false || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:41:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = false;
+             ^
+main.c: In function 'AIPlayer':
+main.c:119:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'bird_alive':
+main.c:131:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:279:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 27 KBytes program size (code + initialized data).
+Info:                           65502 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+20:53:28 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+20:53:44 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+20:55:07 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:59:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:231:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == false || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:41:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = false;
+             ^
+main.c: In function 'AIPlayer':
+main.c:119:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'bird_alive':
+main.c:131:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:279:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 27 KBytes program size (code + initialized data).
+Info:                           65502 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+20:55:10 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+20:55:21 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+20:56:33 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:59:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:231:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == false || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:41:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = false;
+             ^
+main.c: In function 'AIPlayer':
+main.c:119:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'bird_alive':
+main.c:131:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:279:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 27 KBytes program size (code + initialized data).
+Info:                           65502 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+20:56:36 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+20:56:48 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+20:57:55 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:59:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:231:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == false || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:41:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = false;
+             ^
+main.c: In function 'AIPlayer':
+main.c:119:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'bird_alive':
+main.c:131:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:279:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 27 KBytes program size (code + initialized data).
+Info:                           65502 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+20:57:58 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+20:58:10 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+21:00:41 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:59:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:231:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == false || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:41:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = false;
+             ^
+main.c: In function 'AIPlayer':
+main.c:119:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'bird_alive':
+main.c:131:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:279:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 27 KBytes program size (code + initialized data).
+Info:                           65502 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+21:00:45 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+21:00:57 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+21:01:33 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:59:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:231:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == false || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:41:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = false;
+             ^
+main.c: In function 'AIPlayer':
+main.c:119:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'bird_alive':
+main.c:131:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:279:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 27 KBytes program size (code + initialized data).
+Info:                           65502 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+21:01:37 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+21:01:47 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+21:02:25 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:59:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:231:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == false || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:41:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = false;
+             ^
+main.c: In function 'AIPlayer':
+main.c:119:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'bird_alive':
+main.c:131:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:279:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 27 KBytes program size (code + initialized data).
+Info:                           65502 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+21:02:29 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+21:02:40 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+21:04:25 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:59:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:231:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == false || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:41:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = false;
+             ^
+main.c: In function 'AIPlayer':
+main.c:119:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'bird_alive':
+main.c:131:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:279:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 27 KBytes program size (code + initialized data).
+Info:                           65502 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+21:04:32 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+21:04:48 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+21:07:35 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:59:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:231:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == false || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:41:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = false;
+             ^
+main.c: In function 'AIPlayer':
+main.c:119:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'bird_alive':
+main.c:131:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:279:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 27 KBytes program size (code + initialized data).
+Info:                           65502 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+21:07:43 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+21:07:52 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+21:09:56 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:59:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:231:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == false || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:41:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = false;
+             ^
+main.c: In function 'AIPlayer':
+main.c:119:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'bird_alive':
+main.c:131:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:279:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 27 KBytes program size (code + initialized data).
+Info:                           65502 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+21:14:35 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:59:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:232:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == false || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:41:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = false;
+             ^
+main.c: In function 'AIPlayer':
+main.c:119:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'bird_alive':
+main.c:131:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:280:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 28 KBytes program size (code + initialized data).
+Info:                           65502 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+21:14:43 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+21:14:52 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+21:14:56 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+21:15:45 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+21:15:49 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+21:16:07 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+21:19:13 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:59:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:232:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == false || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:41:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = false;
+             ^
+main.c: In function 'AIPlayer':
+main.c:119:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'bird_alive':
+main.c:131:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:280:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 27 KBytes program size (code + initialized data).
+Info:                           65502 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+21:19:21 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+21:19:40 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+21:20:46 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:59:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:232:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == false || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:41:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = false;
+             ^
+main.c: In function 'AIPlayer':
+main.c:119:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'bird_alive':
+main.c:131:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:280:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 27 KBytes program size (code + initialized data).
+Info:                           65502 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+21:20:53 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+21:21:02 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+21:23:19 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:59:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:232:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == false || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:41:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = false;
+             ^
+main.c: In function 'AIPlayer':
+main.c:119:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'bird_alive':
+main.c:131:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:280:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 27 KBytes program size (code + initialized data).
+Info:                           65502 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+21:23:26 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+21:23:37 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+21:25:41 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:59:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:232:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == false || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:41:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = false;
+             ^
+main.c: In function 'AIPlayer':
+main.c:119:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'bird_alive':
+main.c:131:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:280:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 28 KBytes program size (code + initialized data).
+Info:                           65502 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+21:25:49 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+21:26:02 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+21:27:47 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:59:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:232:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == false || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:41:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = false;
+             ^
+main.c: In function 'AIPlayer':
+main.c:119:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'bird_alive':
+main.c:131:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:280:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 28 KBytes program size (code + initialized data).
+Info:                           65502 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+21:27:55 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+21:30:06 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:59:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:233:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == false || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:41:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = false;
+             ^
+main.c: In function 'AIPlayer':
+main.c:119:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'bird_alive':
+main.c:131:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:281:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 28 KBytes program size (code + initialized data).
+Info:                           65502 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+21:30:14 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+21:30:29 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+21:33:51 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:59:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:236:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == false || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:41:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = false;
+             ^
+main.c: In function 'AIPlayer':
+main.c:119:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'bird_alive':
+main.c:131:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:284:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 28 KBytes program size (code + initialized data).
+Info:                           65502 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+21:33:59 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+21:34:12 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+21:34:15 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+21:34:25 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+21:39:32 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:59:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:237:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == false || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:41:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = false;
+             ^
+main.c: In function 'AIPlayer':
+main.c:119:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'bird_alive':
+main.c:131:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:285:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 28 KBytes program size (code + initialized data).
+Info:                           65502 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+21:39:40 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+21:39:49 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+21:45:22 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:59:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:237:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == false || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:41:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = false;
+             ^
+main.c: In function 'AIPlayer':
+main.c:119:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'bird_alive':
+main.c:131:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:285:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 28 KBytes program size (code + initialized data).
+Info:                           65502 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+21:45:29 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+21:45:38 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+21:47:20 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:59:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:237:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == false || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:41:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = false;
+             ^
+main.c: In function 'AIPlayer':
+main.c:119:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'bird_alive':
+main.c:131:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:285:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 28 KBytes program size (code + initialized data).
+Info:                           65502 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+21:47:27 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+21:47:39 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+21:49:51 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:59:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:237:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == false || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:41:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = false;
+             ^
+main.c: In function 'AIPlayer':
+main.c:119:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'bird_alive':
+main.c:131:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:285:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 28 KBytes program size (code + initialized data).
+Info:                           65502 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+21:49:58 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+21:50:13 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+22:48:35 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:59:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:230:41: warning: passing argument 3 of 'bird_alive' makes integer from pointer without a cast
+     if (god == 0 && (yPosition < 80 || !bird_alive(*birdy, pipeXposition, level))) {
+                                         ^
+main.c:121:6: note: expected 'int' but argument is of type 'volatile unsigned int *'
+  int bird_alive(int birdy, int pipex, int level){
+      ^
+main.c:256:42: warning: passing argument 3 of 'bird_alive' makes integer from pointer without a cast
+     if (god == 0 && (yPosition2 < 80 || !bird_alive(*birdy2, pipeXposition, level))) {
+                                          ^
+main.c:121:6: note: expected 'int' but argument is of type 'volatile unsigned int *'
+  int bird_alive(int birdy, int pipex, int level){
+      ^
+main.c:263:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == false || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:41:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = false;
+             ^
+main.c: In function 'AIPlayer':
+main.c:119:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'bird_alive':
+main.c:152:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:311:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 28 KBytes program size (code + initialized data).
+Info:                           65501 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+22:48:37 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+22:48:49 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+22:56:39 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+22:56:41 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+22:56:58 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+23:07:00 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+23:07:01 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+23:07:14 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+23:11:27 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:59:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:233:41: warning: passing argument 3 of 'bird_alive' makes integer from pointer without a cast
+     if (god == 0 && (yPosition < 80 || !bird_alive(*birdy, pipeXposition, level))) {
+                                         ^
+main.c:121:6: note: expected 'int' but argument is of type 'volatile unsigned int *'
+  int bird_alive(int birdy, int pipex, int level){
+      ^
+main.c:259:42: warning: passing argument 3 of 'bird_alive' makes integer from pointer without a cast
+     if (god == 0 && (yPosition2 < 80 || !bird_alive(*birdy2, pipeXposition, level))) {
+                                          ^
+main.c:121:6: note: expected 'int' but argument is of type 'volatile unsigned int *'
+  int bird_alive(int birdy, int pipex, int level){
+      ^
+main.c:266:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == false || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:41:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = false;
+             ^
+main.c: In function 'AIPlayer':
+main.c:119:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'bird_alive':
+main.c:152:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:314:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 73 KBytes program size (code + initialized data).
+Info:                           65455 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+23:11:30 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+23:11:34 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+23:12:22 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+23:13:19 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:59:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:230:41: warning: passing argument 3 of 'bird_alive' makes integer from pointer without a cast
+     if (god == 0 && (yPosition < 80 || !bird_alive(*birdy, pipeXposition, level))) {
+                                         ^
+main.c:121:6: note: expected 'int' but argument is of type 'volatile unsigned int *'
+  int bird_alive(int birdy, int pipex, int level){
+      ^
+main.c:256:42: warning: passing argument 3 of 'bird_alive' makes integer from pointer without a cast
+     if (god == 0 && (yPosition2 < 80 || !bird_alive(*birdy2, pipeXposition, level))) {
+                                          ^
+main.c:121:6: note: expected 'int' but argument is of type 'volatile unsigned int *'
+  int bird_alive(int birdy, int pipex, int level){
+      ^
+main.c:263:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == false || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:41:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = false;
+             ^
+main.c: In function 'AIPlayer':
+main.c:119:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'bird_alive':
+main.c:152:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:311:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 28 KBytes program size (code + initialized data).
+Info:                           65501 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+23:13:21 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+23:13:32 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+23:14:45 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:59:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:210:41: warning: passing argument 3 of 'bird_alive' makes integer from pointer without a cast
+     if (god == 0 && (yPosition < 80 || !bird_alive(*birdy, pipeXposition, level))) {
+                                         ^
+main.c:121:6: note: expected 'int' but argument is of type 'volatile unsigned int *'
+  int bird_alive(int birdy, int pipex, int level){
+      ^
+main.c:236:42: warning: passing argument 3 of 'bird_alive' makes integer from pointer without a cast
+     if (god == 0 && (yPosition2 < 80 || !bird_alive(*birdy2, pipeXposition, level))) {
+                                          ^
+main.c:121:6: note: expected 'int' but argument is of type 'volatile unsigned int *'
+  int bird_alive(int birdy, int pipex, int level){
+      ^
+main.c:243:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == false || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:41:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = false;
+             ^
+main.c: In function 'AIPlayer':
+main.c:119:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'bird_alive':
+main.c:132:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:291:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 28 KBytes program size (code + initialized data).
+Info:                           65502 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+23:14:47 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+23:14:58 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+23:16:42 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:59:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:230:41: warning: passing argument 3 of 'bird_alive' discards 'volatile' qualifier from pointer target type
+     if (god == 0 && (yPosition < 80 || !bird_alive(*birdy, pipeXposition, level))) {
+                                         ^
+main.c:121:6: note: expected 'int *' but argument is of type 'volatile unsigned int *'
+  int bird_alive(int birdy, int pipex, int * level){
+      ^
+main.c:256:42: warning: passing argument 3 of 'bird_alive' discards 'volatile' qualifier from pointer target type
+     if (god == 0 && (yPosition2 < 80 || !bird_alive(*birdy2, pipeXposition, level))) {
+                                          ^
+main.c:121:6: note: expected 'int *' but argument is of type 'volatile unsigned int *'
+  int bird_alive(int birdy, int pipex, int * level){
+      ^
+main.c:263:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == false || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:41:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = false;
+             ^
+main.c: In function 'AIPlayer':
+main.c:119:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'bird_alive':
+main.c:152:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:311:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 28 KBytes program size (code + initialized data).
+Info:                           65501 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+23:16:44 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+23:16:57 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+23:20:56 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:59:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:230:41: warning: passing argument 3 of 'bird_alive' discards 'volatile' qualifier from pointer target type
+     if (god == 0 && (yPosition < 80 || !bird_alive(*birdy, pipeXposition, level))) {
+                                         ^
+main.c:121:6: note: expected 'int *' but argument is of type 'volatile unsigned int *'
+  int bird_alive(int birdy, int pipex, int * level){
+      ^
+main.c:256:42: warning: passing argument 3 of 'bird_alive' discards 'volatile' qualifier from pointer target type
+     if (god == 0 && (yPosition2 < 80 || !bird_alive(*birdy2, pipeXposition, level))) {
+                                          ^
+main.c:121:6: note: expected 'int *' but argument is of type 'volatile unsigned int *'
+  int bird_alive(int birdy, int pipex, int * level){
+      ^
+main.c:263:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == false || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:41:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = false;
+             ^
+main.c: In function 'AIPlayer':
+main.c:119:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'bird_alive':
+main.c:152:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:311:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 28 KBytes program size (code + initialized data).
+Info:                           65501 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+23:20:58 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+23:21:08 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+23:30:23 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:59:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:230:41: warning: passing argument 3 of 'bird_alive' discards 'volatile' qualifier from pointer target type
+     if (god == 0 && (yPosition < 80 || !bird_alive(*birdy, pipeXposition, level))) {
+                                         ^
+main.c:121:6: note: expected 'int *' but argument is of type 'volatile unsigned int *'
+  int bird_alive(int birdy, int pipex, int * level){
+      ^
+main.c:256:42: warning: passing argument 3 of 'bird_alive' discards 'volatile' qualifier from pointer target type
+     if (god == 0 && (yPosition2 < 80 || !bird_alive(*birdy2, pipeXposition, level))) {
+                                          ^
+main.c:121:6: note: expected 'int *' but argument is of type 'volatile unsigned int *'
+  int bird_alive(int birdy, int pipex, int * level){
+      ^
+main.c:263:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == false || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:41:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = false;
+             ^
+main.c: In function 'AIPlayer':
+main.c:119:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'bird_alive':
+main.c:152:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:311:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 28 KBytes program size (code + initialized data).
+Info:                           65501 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+23:30:26 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+23:30:38 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+23:31:22 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+23:31:23 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+23:31:35 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+23:34:32 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+23:34:34 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+23:34:45 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+23:49:20 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:59:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:230:41: warning: passing argument 3 of 'bird_alive' discards 'volatile' qualifier from pointer target type
+     if (god == 0 && (yPosition < 80 || !bird_alive(*birdy, pipeXposition, level))) {
+                                         ^
+main.c:121:6: note: expected 'int *' but argument is of type 'volatile unsigned int *'
+  int bird_alive(int birdy, int pipex, int * level){
+      ^
+main.c:256:42: warning: passing argument 3 of 'bird_alive' discards 'volatile' qualifier from pointer target type
+     if (god == 0 && (yPosition2 < 80 || !bird_alive(*birdy2, pipeXposition, level))) {
+                                          ^
+main.c:121:6: note: expected 'int *' but argument is of type 'volatile unsigned int *'
+  int bird_alive(int birdy, int pipex, int * level){
+      ^
+main.c:263:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == false || dead && dead2 && two_players){
+              ^
+main.c: At top level:
+main.c:41:13: warning: 'too_high' defined but not used [-Wunused-variable]
+  static int too_high = false;
+             ^
+main.c: In function 'AIPlayer':
+main.c:119:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'bird_alive':
+main.c:152:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:311:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 28 KBytes program size (code + initialized data).
+Info:                           65501 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+23:49:22 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+23:49:45 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+23:51:29 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+23:51:30 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+23:51:35 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+23:58:10 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+23:58:11 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+23:58:21 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+00:15:24 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:53:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:224:41: warning: passing argument 3 of 'helicopter_alive' discards 'volatile' qualifier from pointer target type
+     if (god == 0 && (yPosition < 80 || !helicopter_alive(*helicopterY, pipeXposition, level))) {
+                                         ^
+main.c:115:6: note: expected 'int *' but argument is of type 'volatile unsigned int *'
+  int helicopter_alive(int helicopterY, int pipex, int * level){
+      ^
+main.c:250:42: warning: passing argument 3 of 'helicopter_alive' discards 'volatile' qualifier from pointer target type
+     if (god == 0 && (yPosition2 < 80 || !helicopter_alive(*helicopterY2, pipeXposition, level))) {
+                                          ^
+main.c:115:6: note: expected 'int *' but argument is of type 'volatile unsigned int *'
+  int helicopter_alive(int helicopterY, int pipex, int * level){
+      ^
+main.c:257:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == 0 || dead && dead2 && two_players){
+              ^
+main.c: In function 'AI':
+main.c:113:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'helicopter_alive':
+main.c:146:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:305:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 28 KBytes program size (code + initialized data).
+Info:                           65501 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+00:15:27 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+00:15:45 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+00:30:11 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+Info: Compiling main.c to obj/default/main.o
+nios2-elf-gcc -xc -MP -MMD -c -I../flappy_bird_control_bsp//HAL/inc -I../flappy_bird_control_bsp/ -I../flappy_bird_control_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_INSTRUCTION_EMULATION -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o obj/default/main.o main.c
+main.c: In function 'randomHeight':
+main.c:53:3: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+   int out = 120 + rand() % 180;
+   ^
+main.c: In function 'main':
+main.c:224:41: warning: passing argument 3 of 'helicopter_alive' discards 'volatile' qualifier from pointer target type
+     if (god == 0 && (yPosition < 80 || !helicopter_alive(*helicopterY, pipeXposition, level))) {
+                                         ^
+main.c:115:6: note: expected 'int *' but argument is of type 'volatile unsigned int *'
+  int helicopter_alive(int helicopterY, int pipex, int * level){
+      ^
+main.c:250:42: warning: passing argument 3 of 'helicopter_alive' discards 'volatile' qualifier from pointer target type
+     if (god == 0 && (yPosition2 < 80 || !helicopter_alive(*helicopterY2, pipeXposition, level))) {
+                                          ^
+main.c:115:6: note: expected 'int *' but argument is of type 'volatile unsigned int *'
+  int helicopter_alive(int helicopterY, int pipex, int * level){
+      ^
+main.c:257:14: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+     if (dead && two_players == 0 || dead && dead2 && two_players){
+              ^
+main.c: In function 'AI':
+main.c:113:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'helicopter_alive':
+main.c:146:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+main.c: In function 'main':
+main.c:306:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Info: Linking flappy_bird_control.elf
+nios2-elf-g++  -T'../flappy_bird_control_bsp//linker.x' -msys-crt0='../flappy_bird_control_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../flappy_bird_control_bsp/   -Wl,-Map=flappy_bird_control.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx  -o flappy_bird_control.elf obj/default/main.o -lm -msys-lib=m
+nios2-elf-insert flappy_bird_control.elf --thread_model hal --cpu_name nios2_gen2_0 --qsys true --simulation_enabled false --id 0 --sidp 0x1b8 --timestamp 1479073008 --stderr_dev jtag_uart_0 --stdin_dev jtag_uart_0 --stdout_dev jtag_uart_0 --sopc_system_name flappy_bird_control --quartus_project_dir "C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project" --jdi ../..//output_files/Flappy_Bird.jdi --sopcinfo C:/uiuc_subject_file/ece/385/zefan/lab_final_projects/ECE385_Final_Project/working_copy_final_project/software/flappy_bird_control_bsp/../../flappy_bird_control.sopcinfo
+Info: (flappy_bird_control.elf) 28 KBytes program size (code + initialized data).
+Info:                           65501 KBytes free for stack + heap.
+Info: Creating flappy_bird_control.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source flappy_bird_control.elf >flappy_bird_control.objdump
+[flappy_bird_control build complete]
+00:30:13 **** Incremental Build of configuration Nios II for project flappy_bird_control_bsp ****
+make all 
+[BSP build complete]
+00:30:26 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]

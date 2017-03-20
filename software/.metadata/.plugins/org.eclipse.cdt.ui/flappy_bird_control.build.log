@@ -1,0 +1,9 @@
+18:08:21 **** Incremental Build of configuration Nios II for project flappy_bird_control ****
+make all 
+Info: Building ../flappy_bird_control_bsp/
+C:/altera/15.0/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../flappy_bird_control_bsp/
+[BSP build complete]
+[flappy_bird_control build complete]
+
+18:08:23 Build Finished (took 1s.317ms)
+
